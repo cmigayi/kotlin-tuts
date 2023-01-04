@@ -12,7 +12,8 @@ class MovieViewModel(private val movieRepository: MovieRepository) : ViewModel()
     init {
         fetchPopularMovies()
     }
-    val popularMovies: LiveData<List<Movie>> get() = movieRepository.movies
+    val popularMovies: LiveData<List<Movie>>
+    get() = movieRepository.movies
     fun getError(): LiveData<String> = movieRepository.error
 
     private fun fetchPopularMovies() {
