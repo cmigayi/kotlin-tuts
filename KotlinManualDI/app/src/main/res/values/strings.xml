@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KotlinManualDI</string>
+    <string name="randomize">Generate number</string>
+</resources>
